@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const companies = [
   { name: "Stringify", icon: "/stringify-consulting.png" },
-  { name: "House Of Funke", icon: "/house-of-funke.png" },
+  { name: "House Of Funke", icon: "/house-Of-funke.PNG" },
   { name: "Tintech", icon: "/tintech.jpg" },
   { name: "FarmFest Connect", icon: "/farm-connect.png" },
   // Add more if needed
