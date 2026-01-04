@@ -9,45 +9,47 @@ import Footer from "@/components/Footer";
 
 const brands = [
   { name: "HTML", icon: BriefcaseIcon },
-  { name: "CSS", icon: BuildingStorefrontIcon },
-  { name: "JAVASCRIPT", icon: CloudIcon },
-  { name: "REACT", icon: BriefcaseIcon },
-  { name: "GIT", icon: BuildingStorefrontIcon },
-  { name: "PHP", icon: CloudIcon },
-  { name: "LARAVEL", icon: BriefcaseIcon },
+  { name: "CSS", icon: BriefcaseIcon },
+  { name: "JAVASCRIPT", icon: BriefcaseIcon },
+  { name: "REACT", icon: BuildingStorefrontIcon },
+  { name: "GIT", icon: CloudIcon },
+  { name: "PHP", icon: BriefcaseIcon },
+  { name: "LARAVEL", icon: BuildingStorefrontIcon },
   { name: "NODEJS", icon: BuildingStorefrontIcon },
-  { name: "NEXTJS", icon: CloudIcon },
-  { name: "TAILWINDCSS", icon: BriefcaseIcon },
-   { name: "ADONISJS", icon: BriefcaseIcon },
-    { name: "POSTGRESQL", icon: BriefcaseIcon },
-     { name: "MYSQL", icon: BriefcaseIcon },
+  { name: "NEXTJS", icon: BuildingStorefrontIcon },
+  { name: "TAILWINDCSS", icon: BuildingStorefrontIcon },
+   { name: "ADONISJS", icon: BuildingStorefrontIcon },
+    { name: "POSTGRESQL", icon: CloudIcon },
+     { name: "MYSQL", icon: CloudIcon },
 ];
 
 const educations = [
   {
-    school: "STANFORD UNIVERSITY",
-    date: "JAN 2016",
-    title: "Frontend Web Developer Degree",
-    desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cill dolore eu fugiat nulla pariatur sint occaecat dolor.",
+    school: "LADOKE AKINTOLA UNIVERSITY OF TECHNOLOGY",
+    date: "SEPT 2016",
+    title: "Bachelor of Technology ",
+    desc: "Completed a Bachelor of Technology degree with a strong foundation in engineering principles, problem-solving, and applied technical skills.",
   },
   {
-    school: "MIT UNIVERSITY",
-    date: "AUG 2014",
-    title: "User Experience Master",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl ut lacinia leo nuno id tellus. Orci, curabitur lorem massa cursus.",
+    school: "DESIGN WITH BLOCKS ACADEMY",
+    date: "JUN 2021",
+    title: "Programming & UX Foundations",
+    desc: "Began formal training in programming and user experience design, learning the fundamentals of building functional, user-centered digital products through hands-on projects.",
   },
   {
-    school: "GOOGLE",
-    date: "APR 2011",
-    title: "Javascript Basics Course",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas feugiat sagittis, nunc in hac faucibus in risus.",
-  },
-  {
-    school: "NEW YORK UNIVERSITY",
-    date: "MAY 2008",
-    title: "Web Development Degree",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum senectus dis nunc fermentum tellus id. Eros tempor.",
-  },
+  school: "HOUSE OF FUNKE",
+  date: "FEB 2022",
+  title: "Web Developer (Freelance)",
+  desc: "Worked as a freelance web developer, optimizing PHP and SQL-based systems for performance and reliability. Implemented secure authentication workflows, role-based access control, and caching strategies to improve application speed, scalability, and overall user experience."
+}
+,
+ {
+  school: "STRINGIFY CONSULTANT",
+  date: "MAR 2025",
+  title: "Full-Stack Developer",
+  desc: "Working as a full-stack developer, building and maintaining scalable web applications and APIs. Responsible for developing frontend interfaces, backend services, and contributing to system architecture with a focus on performance, security, and clean code."
+}
+
 ];
 
 export default function AboutPage() {
@@ -84,10 +86,10 @@ export default function AboutPage() {
         >
           <h2 className="text-2xl font-semibold mb-4 text-emerald-400">My Story</h2>
           <p className="text-gray-600 mb-4">
-            Im Ifeoluwa Atere, a developer with a passion for designing and building beautiful, performant websites and apps. I’ve worked on projects ranging from portfolio sites to full-scale business platforms.
+            I’m Ifeoluwa Atere, a developer who builds production-ready web applications and digital products. My experience spans portfolio websites, marketplaces, and business platforms designed for performance, scalability, and usability.
           </p>
           <p className="text-gray-600">
-            I focus on writing clean, maintainable code and continuously improving my skill set.
+            I focus on clean architecture, maintainable code, and turning ideas into reliable, real-world solutions.
           </p>
         </motion.div>
       </div>
@@ -102,15 +104,15 @@ export default function AboutPage() {
         viewport={{ once: true }}
       >
         <div>
-          <h3 className="text-4xl font-bold text-emerald-600">12+</h3>
+          <h3 className="text-4xl font-bold text-emerald-600">3+</h3>
           <p className="text-gray-500">Years of Experience</p>
         </div>
         <div>
-          <h3 className="text-4xl font-bold text-emerald-600">150+</h3>
+          <h3 className="text-4xl font-bold text-emerald-600">15</h3>
           <p className="text-gray-500">Projects Delivered</p>
         </div>
         <div>
-          <h3 className="text-4xl font-bold text-emerald-600">30+</h3>
+          <h3 className="text-4xl font-bold text-emerald-600">15</h3>
           <p className="text-gray-500">Happy Clients</p>
         </div>
       </motion.div>
@@ -152,9 +154,8 @@ export default function AboutPage() {
         How I started as a web developer
       </h3>
       <p className="text-gray-300 leading-relaxed">
-        Exceptetur sint occaecat cupidatat non proident, sunt in culpa qui
-        officia deserunt mollit anim id est laborum aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+        I started my journey into web development out of curiosity and a desire to build things that actually work. What began as simple websites quickly grew into building full applications as I learned how the web truly functions behind the scenes.
+        Over time, I moved from basic layouts to creating functional platforms, focusing on performance, structure, and real user needs. That curiosity eventually became a craft I continue to refine every day.
       </p>
     </motion.div>
   </div>
@@ -171,12 +172,10 @@ export default function AboutPage() {
     >
       <p className="text-sm text-emerald-400 font-semibold mb-2">/ MY STORY</p>
       <h3 className="text-3xl md:text-4xl font-bold mb-4">
-        My first website design back in 2001
+        My early web development journey
       </h3>
       <p className="text-gray-300 leading-relaxed">
-        I started creating websites with basic HTML & CSS in 2001. Over time,
-        I’ve grown into building full-stack applications with performance,
-        accessibility, and elegance in mind.
+       I began building websites using basic HTML and CSS, driven by curiosity about how the web works. Over time, that foundation evolved into creating full-stack web applications with a strong focus on performance, accessibility, and clean design.
       </p>
     </motion.div>
 
@@ -226,27 +225,26 @@ export default function AboutPage() {
             transition={{ delay: index * 0.05, duration: 0.4 }}
             viewport={{ once: true }}
           >
-            <Icon className="w-6 h-6 text-white" />
+            <Icon className="w-6 h-6 text-emerald-400" />
             <span className="text-sm font-medium">{name}</span>
           </motion.div>
         ))}
       </div>
 
       {/* CTA */}
-      <motion.a
-        href="#contact"
-        className="inline-block text-white font-semibold text-lg group"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-        viewport={{ once: true }}
-      >
-        Get in touch{" "}
-        <span className="inline-block group-hover:translate-x-1 transition-transform">
-          →
-        </span>
-        <div className="h-[2px] w-0 group-hover:w-full transition-all duration-300 bg-white mt-1 mx-auto" />
-      </motion.a>
+     <motion.a
+  href="#contact"
+  className="inline-block text-white font-semibold text-lg group"
+>
+  Get in touch{" "}
+  <span className="inline-block group-hover:translate-x-1 transition-transform">
+    →
+  </span>
+
+  {/* underline */}
+  <div className="h-[2px] w-0 group-hover:w-full transition-all duration-300 bg-emerald-400 mt-1" />
+</motion.a>
+
     </motion.section>
 
 
@@ -261,7 +259,7 @@ export default function AboutPage() {
       <div className="flex flex-col md:flex-row justify-between mb-10">
         <div>
           <p className="text-sm text-emerald-400 font-semibold mb-1">/ MY BACKGROUND</p>
-          <h3 className="text-3xl md:text-4xl font-bold">Experience / Education</h3>
+          <h3 className="text-3xl md:text-4xl font-bold">Education / Experience </h3>
         </div>
         {/* <p className="text-gray-400 max-w-md mt-4 md:mt-0">
           Lorem ipsum dolor sit amet consectetur adipiscing elit et et eget tortor lacus aliquam pulvinar senectus ut sapien sed nun
@@ -271,7 +269,7 @@ export default function AboutPage() {
       <hr className="border-gray-700 mb-10" />
 
       {/* Experience Grid */}
-     <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-700">
+     <div className="grid grid-cols-1 md:grid-cols-2 divide-y  divide-gray-700">
         {educations.map((edu, idx) => (
           <motion.div
             key={idx}
@@ -293,7 +291,7 @@ export default function AboutPage() {
       {/* Download CV Button */}
       <div className="text-center mt-10">
         <a
-          href="/assets/cv.pdf"
+          href="/assets/Atere-Ifeoluwa-CV.pdf"
           download
           className="inline-block border border-white px-6 py-2 rounded-full text-white hover:bg-emerald-400 hover:text-black transition duration-300"
         >

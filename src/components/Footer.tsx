@@ -4,13 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  FaFacebookF,
-  FaTwitter,
   FaInstagram,
   FaLinkedinIn,
-  FaYoutube,
+  FaEnvelope,
   FaGithub,
+  FaWhatsapp,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 
 
@@ -41,13 +41,68 @@ const Footer: React.FC = () => {
 
           {/* Social Icons Underneath */}
           <div className="flex gap-4 mt-4 text-lg">
-            <FaFacebookF />
-            <FaTwitter />
-            <FaInstagram />
-            <FaLinkedinIn />
-            <FaYoutube />
-            <FaGithub />
-          </div>
+  <a
+    href="https://wa.me/2348125654079?text=Hello%20I%20found%20your%20portfolio"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-emerald-400 transition-colors"
+    aria-label="Facebook"
+  >
+     <FaWhatsapp />
+  </a>
+
+  <a
+    href="https://x.com/AtereJeffrey"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-emerald-400 transition-colors"
+    aria-label="Twitter"
+  >
+    <FaXTwitter />
+
+  </a>
+
+  <a
+    href="https://instagram.com/yourusername"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-emerald-400 transition-colors"
+    aria-label="Instagram"
+  >
+    <FaInstagram />
+  </a>
+
+  <a
+    href="www.linkedin.com/in/ifeoluwa-atere-1b2704231"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-emerald-400 transition-colors"
+    aria-label="LinkedIn"
+  >
+    <FaLinkedinIn />
+  </a>
+
+  <a
+    href="mailto:ifeoluwaatere1@gmail.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-emerald-400 transition-colors"
+    aria-label="YouTube"
+  >
+    <FaEnvelope />
+  </a>
+
+  <a
+    href="https://github.com/Velination"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-emerald-400 transition-colors"
+    aria-label="GitHub"
+  >
+    <FaGithub />
+  </a>
+</div>
+
         </div>
         </motion.div>
 
@@ -115,7 +170,7 @@ const Footer: React.FC = () => {
           <Link href="/contact">Contact</Link>
         </div>
         <p>
-          Copyright © A.I Tech | Designed by{" "}
+          Copyright © V.A.I Technologies | Designed by{" "}
           <a href="#" className="underline">
             Ifeoluwa Atere
           </a>

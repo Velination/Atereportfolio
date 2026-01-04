@@ -3,28 +3,29 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const projects = [
   {
     id: 1,
-    name: "Dev X",
-    title: "Agency Website Development for Dev X",
-    tags: ["React JS", "Web Development"],
-    image: "/assets/farmstore.jpg",
+    name: "Surebase",
+    title: "Insurtech Platform Development for Surebase",
+    tags: ["Fintech", "Insurtech", "Web Development", "API"],
+    image: "/assets/surebase.png",
   },
-  {
+   {
     id: 2,
-    name: "DeFi X",
-    title: "Crypto Website Development for DeFi X",
-    tags: ["React JS", "Web Development"],
-    image: "/assets/farmstore.jpg",
+    name: "MyQura",
+    title: "Health & Wellness Platform Development for MyQura",
+    tags: ["HealthTech", "Mobile Application", "API"],
+    image: "/assets/myqura.png",
   },
   {
     id: 3,
-    name: "Dark X",
-    title: "Trading Website Development for Dark X",
-    tags: ["Webflow", "Web Development"],
-    image: "/assets/farmstore.jpg",
+    name: "Beauty By Miemie",
+    title: "Booking application for a Hair salon",
+    tags: ["E-commerce", "Beauty Brand", "Web Application"],
+    image: "/assets/beautybymiemie.png",
   },
 ];
 
@@ -54,26 +55,31 @@ const PortfolioSection = () => {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => {
-            const isHovered = hoveredId === project.id;
+  const isHovered = hoveredId === project.id;
 
-            return (
-              <motion.div
-                key={project.id}
-                className={`rounded-3xl p-6 flex flex-col cursor-pointer transition duration-300 ${
-                  isHovered
-                    ? "bg-[#2e323c]"
-                    : hoveredId === null
-                    ? "bg-[#2e323c]"
-                    : "bg-[#1a1c20] opacity-60"
-                }`}
-                onMouseEnter={() => setHoveredId(project.id)}
-                onMouseLeave={() => setHoveredId(null)}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                whileHover={{ scale: 1.03 }}
-                transition={{ duration: 0.4 }}
-                viewport={{ once: true }}
-              >
+  return (
+    <Link
+      key={project.id}
+      href="/portfolio"
+      className="block"
+    >
+      <motion.div
+        className={`rounded-3xl p-6 flex flex-col cursor-pointer transition duration-300 ${
+          isHovered
+            ? "bg-[#2e323c]"
+            : hoveredId === null
+            ? "bg-[#2e323c]"
+            : "bg-[#1a1c20] opacity-60"
+        }`}
+        onMouseEnter={() => setHoveredId(project.id)}
+        onMouseLeave={() => setHoveredId(null)}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        whileHover={{ scale: 1.03 }}
+        transition={{ duration: 0.4 }}
+        viewport={{ once: true }}
+      >
+
                 {/* Tags */}
                 <div className="flex gap-2 mb-4">
                   {project.tags.map((tag) => (
@@ -103,6 +109,7 @@ const PortfolioSection = () => {
                   />
                 </div>
               </motion.div>
+              </Link>
             );
           })}
         </div>

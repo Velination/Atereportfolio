@@ -32,7 +32,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          Im a Full Stack Developer Based in Nigeria
+          I build full-stack applications that turn ideas into usable products
         </motion.p>
       </div>
 

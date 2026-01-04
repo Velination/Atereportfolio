@@ -4,11 +4,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const companies = [
-  { name: "company", icon: "/assets/company.svg" },
-  { name: "venture", icon: "/assets/venture.svg" },
-  { name: "studio", icon: "/assets/studio.svg" },
-  { name: "Tintech", icon: "/assets/tintech.svg" },
-  { name: "FarmFest Connect", icon: "/assets/FarmFestConnect.svg" },
+  { name: "Stringify", icon: "/stringify-consulting.png" },
+  { name: "House Of Funke", icon: "/house-of-funke.png" },
+  { name: "Tintech", icon: "/tintech.jpg" },
+  { name: "FarmFest Connect", icon: "/farm-connect.png" },
   // Add more if needed
 ];
 
@@ -24,12 +23,10 @@ export default function About() {
         <div className="md:w-1/2">
           <h2 className="text-sm text-emerald-400 mb-2">/ ABOUT ME</h2>
           <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-            I’ve been developing websites since 2010
+            I build scalable, production-ready web and mobile applications
           </h1>
           <p className="text-gray-400 text-base mb-6">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+            I’m a full-stack developer with experience building web applications, marketplaces, and business platforms. I focus on clean architecture, maintainable code, and delivering reliable solutions that scale.
           </p>
           <div className="inline-block group mb-10">
             <a
@@ -45,11 +42,11 @@ export default function About() {
         {/* Stats */}
         <div className="md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-8 p-20">
           <div>
-            <p className="text-4xl font-bold">12</p>
+            <p className="text-4xl font-bold">3+</p>
             <p className="text-gray-400">Years of experience</p>
           </div>
           <div>
-            <p className="text-4xl font-bold">150</p>
+            <p className="text-4xl font-bold">15</p>
             <p className="text-gray-400">Successful projects</p>
           </div>
         </div>
@@ -80,7 +77,7 @@ export default function About() {
         alt={company.name}
         width={100}
         height={40}
-        className="object-contain grayscale"
+        className="object-contain grayscale-0"
       />
     ))}
   </div>

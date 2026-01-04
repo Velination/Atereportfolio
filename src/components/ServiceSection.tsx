@@ -8,7 +8,7 @@ const services = [
   {
     icon: <FaLaptopCode className="text-3xl text-emerald-400" />,
     title: "Digital Strategy",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    desc: "I help define and execute digital strategies that align technology with business goals, focusing on scalable solutions, performance, and long-term growth."
   },
   {
     icon: <FaPalette className="text-3xl text-emerald-400" />,
@@ -18,22 +18,22 @@ const services = [
   {
     icon: <FaUserAlt className="text-3xl text-emerald-400" />,
     title: "User Experience",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    desc: "Designing clean, responsive, and user-focused interfaces that balance aesthetics with usability across modern web platforms."
   },
   {
     icon: <FaCode className="text-3xl text-emerald-400" />,
     title: "Web Development",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    desc: "Building scalable, high-performance web applications using modern frameworks, clean architecture, and proven development best practices."
   },
   {
     icon: <FaWordpress className="text-3xl text-emerald-400" />,
     title: "WordPress Solutions",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    desc: "Building and customizing WordPress websites tailored to business needs, focusing on performance, security, and ease of content management."
   },
   {
     icon: <FaMobileAlt className="text-3xl text-emerald-400" />,
     title: "Mobile Applications",
-    desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+    desc: "Developing modern mobile applications with a focus on performance, usability, and seamless integration with backend services."
   },
 ];
 
