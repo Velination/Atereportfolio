@@ -1,6 +1,8 @@
 // pages/api/contact.ts
 import type { NextApiRequest, NextApiResponse } from "next";
-import nodemailer from "nodemailer";
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const SibApiV3Sdk = require("sib-api-v3-sdk");
 
 export default async function handler(
   req: NextApiRequest,
@@ -17,31 +19,29 @@ export default async function handler(
   }
 
   try {
-    const transporter = nodemailer.createTransport({
-      host: "smtp-relay.brevo.com",
-      port: 587,
-      secure: false,
-      auth: {
-        user: process.env.BREVO_SMTP_USER, // "apikey"
-        pass: process.env.BREVO_SMTP_PASS,
+    const client = SibApiV3Sdk.ApiClient.instance;
+    client.authentications["api-key"].apiKey =
+      process.env.BREVO_API_KEY;
+
+    const api = new SibApiV3Sdk.TransactionalEmailsApi();
+
+    await api.sendTransacEmail({
+      sender: {
+        name: "Portfolio Contact",
+        email: "noreply@brevo-mail.com",
       },
-    });
-
-    await transporter.sendMail({
-      from: `"Portfolio Contact" <${process.env.EMAIL_FROM}>`,
-      to: process.env.EMAIL_RECEIVER,
-      replyTo: email,
+      to: [{ email: "velination23@gmail.com" }],
+      replyTo: { email, name },
       subject: `New message from ${name}`,
-      text: `Name: ${name}
-Email: ${email}
-
-Message:
-${message}`,
+      textContent: message,
     });
 
     return res.status(200).json({ message: "Message sent successfully" });
-  } catch (error) {
-    console.error("Brevo email error:", error);
-    return res.status(500).json({ message: "Failed to send message" });
+  } catch (error: any) {
+    console.error("Brevo API error:", error);
+    return res.status(500).json({
+      message: "Failed to send message",
+      error: error.message,
+    });
   }
 }

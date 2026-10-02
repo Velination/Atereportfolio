@@ -16,34 +16,57 @@ const ContactSection = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    // 1. Check for empty fields
-    if (!formData.name || !formData.email || !formData.message) {
-      setStatus({ type: "error", message: "Please fill in all fields." });
-      return;
-    }
+  if (!formData.name || !formData.email || !formData.message) {
+    setStatus({
+      type: "error",
+      message: "Please fill in all fields.",
+    });
+    return;
+  }
 
-    setStatus({ type: "success", message: "Sending..." });
+  setStatus({
+    type: "success",
+    message: "Sending...",
+  });
 
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+  try {
+    const res = await fetch("https://formspree.io/f/xqpavnay", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (res.ok) {
+      setStatus({
+        type: "success",
+        message: "Message sent successfully!",
       });
 
-      if (res.ok) {
-        setStatus({ type: "success", message: "Message sent successfully!" });
-        setFormData({ name: "", email: "", message: "" });
-      } else {
-        setStatus({ type: "error", message: "Failed to send message." });
-      }
-    } catch (err) {
-      console.error(err);
-      setStatus({ type: "error", message: "Something went wrong. Please try again later." });
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } else {
+      setStatus({
+        type: "error",
+        message: "Failed to send message.",
+      });
     }
-  };
+  } catch (err) {
+    console.error(err);
+
+    setStatus({
+      type: "error",
+      message: "Something went wrong. Please try again later.",
+    });
+  }
+};
 
   // 3. Auto-hide status message after 4s
   useEffect(() => {
@@ -74,6 +97,7 @@ const ContactSection = () => {
             <input
               type="text"
               id="name"
+              name="name"
               value={formData.name}
               onChange={handleChange}
               className="peer bg-transparent border-b-2 border-gray-500 w-full py-2 text-white focus:outline-none focus:border-emerald-400 placeholder-transparent"
@@ -94,6 +118,7 @@ const ContactSection = () => {
             <input
               type="email"
               id="email"
+              name="email"
               value={formData.email}
               onChange={handleChange}
               className="peer bg-transparent border-b-2 border-gray-500 w-full py-2 text-white focus:outline-none focus:border-emerald-400 placeholder-transparent"

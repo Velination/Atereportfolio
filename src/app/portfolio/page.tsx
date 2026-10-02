@@ -101,7 +101,28 @@ const projects: Project[] = [
   platform: "Stringify Consultant",
   country: "Nigeria",
   liveUrl: "https://myqura.org/",
-}
+},
+{
+  id: 6,
+  name: "ProsHQ",
+  title: "Marketplace Connecting Customers with Skilled Professionals",
+  tags: [
+    "Service Marketplace",
+    "Web Application",
+    "Professional Services",
+    "API",
+  ],
+  image: "/assets/Proshq.png",
+  description:
+    "ProsHQ is a service marketplace that connects customers with skilled professionals for everyday jobs and services. Customers can discover and hire trusted professionals such as electricians, plumbers, carpenters, and other service providers.",
+  description2:
+    "The platform is designed to simplify the process of finding the right professional for a job, allowing customers and service providers to connect through a centralized digital platform.",
+  type: "Web Application",
+  languages: ["React", "Node.js", "API"],
+  platform: "ProsHQ",
+  country: "Nigeria",
+  liveUrl: "Still in production",
+},
 ];
 
 // ---- Portal so the modal renders into <body> (avoids stacking issues)

@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
           {/* Social Icons Underneath */}
           <div className="flex gap-4 mt-4 text-lg">
   <a
-    href="https://wa.me/2348125654079?text=Hello%20I%20found%20your%20portfolio"
+    href="https://wa.me/447344396854?text=Hello%20I%20found%20your%20portfolio"
     target="_blank"
     rel="noopener noreferrer"
     className="hover:text-emerald-400 transition-colors"
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
   </a>
 
   <a
-    href="https://instagram.com/yourusername"
+    href="https://instagram.com/vel.ination"
     target="_blank"
     rel="noopener noreferrer"
     className="hover:text-emerald-400 transition-colors"
@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
   </a>
 
   <a
-    href="mailto:ifeoluwaatere1@gmail.com"
+    href="mailto:atereifeoluwa966@gmail.com"
     target="_blank"
     rel="noopener noreferrer"
     className="hover:text-emerald-400 transition-colors"
@@ -136,7 +136,7 @@ const Footer: React.FC = () => {
                   href="mailto:ifeoluwaatere1@gmail.com"
                   className="font-bold inline-flex items-center transition-transform duration-300 group-hover:translate-x-1"
                 >
-                  ifeoluwaatere1@gmail.com
+                  AtereIfeoluwa966@gmail.com
                   <span className="text-emerald-400 ml-1">→</span>
                 </a>
                 <span className="block h-0.5 bg-emerald-400 w-0 group-hover:w-full transition-all duration-300" />
@@ -148,10 +148,10 @@ const Footer: React.FC = () => {
               <p className="text-xs text-gray-400">CALL ME:</p>
               <div className="inline-block group">
                 <a
-                  href="tel:+2348125654079"
+                  href="tel:+447344396854"
                   className="font-bold inline-flex items-center transition-transform duration-300 group-hover:translate-x-1"
                 >
-                  +234 812 565 4079
+                  +44 734 439 6854
                   <span className="text-emerald-400 ml-1">→</span>
                 </a>
                 <span className="block h-0.5 bg-emerald-400 w-0 group-hover:w-full transition-all duration-300" />
@@ -170,7 +170,7 @@ const Footer: React.FC = () => {
           <Link href="/contact">Contact</Link>
         </div>
         <p>
-          Copyright © V.A.I Technologies | Designed by{" "}
+          Copyright © V.I.A Technologies | Designed by{" "}
           <a href="#" className="underline">
             Ifeoluwa Atere
           </a>
