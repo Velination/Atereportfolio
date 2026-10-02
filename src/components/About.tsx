@@ -13,9 +13,9 @@ const companies = [
   { name: "Surebase", icon: "/Surebase_Logo.png" },
   { name: "Beauty By Miemie", icon: "/BBM.png" },
   { name: "Sturdie AI", icon: "/Sturdie.png" },
+  { name: "Identity Base", icon: "/Identity-Base.png" },
 
   // Add your two new logos here
-  // { name: "Company Name", icon: "/company-logo.png" },
   // { name: "Company Name", icon: "/company-logo.png" },
 ];
 
